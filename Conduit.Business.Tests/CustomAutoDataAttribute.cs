@@ -1,6 +1,6 @@
 ﻿using AutoFixture;
 using AutoFixture.Xunit2;
-using Conduit.Data.Entities;
+using Conduit.Domain;
 using System;
 
 namespace Conduit.Business.Tests

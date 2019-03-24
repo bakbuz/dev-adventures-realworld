@@ -1,7 +1,7 @@
 ﻿using Conduit.Api.OperationFilters;
 using Conduit.Core.Configuration;
-using Conduit.Data.Entities;
-using Conduit.Data.EntityFramework;
+using Conduit.Domain;
+using Conduit.Data.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;

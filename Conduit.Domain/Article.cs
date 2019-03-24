@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Conduit.Data.Entities
+namespace Conduit.Domain
 {
     public class Article
     {

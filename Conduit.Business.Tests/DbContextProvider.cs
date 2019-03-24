@@ -1,4 +1,4 @@
-﻿using Conduit.Data.EntityFramework;
+﻿using Conduit.Data.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 

@@ -1,9 +1,9 @@
-﻿using Conduit.Data.Entities;
+﻿using Conduit.Domain;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Conduit.Data.EntityFramework
+namespace Conduit.Data.EntityFrameworkCore
 {
     public class ApplicationDbContext : IdentityDbContext<User, IdentityRole, string>
     {

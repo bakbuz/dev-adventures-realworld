@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Conduit.Data.Entities
+namespace Conduit.Domain
 {
     public class User : IdentityUser<string>
     {

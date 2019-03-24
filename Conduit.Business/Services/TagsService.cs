@@ -1,5 +1,5 @@
 ﻿using Conduit.Core.Services;
-using Conduit.Data.EntityFramework;
+using Conduit.Data.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;

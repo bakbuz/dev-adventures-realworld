@@ -1,4 +1,4 @@
-﻿using Conduit.Data.Entities;
+﻿using Conduit.Domain;
 using Microsoft.AspNetCore.Identity;
 using Moq;
 

@@ -2,8 +2,8 @@
 using Conduit.Business.Services;
 using Conduit.Core.Identity;
 using Conduit.Core.Models;
-using Conduit.Data.Entities;
-using Conduit.Data.EntityFramework;
+using Conduit.Domain;
+using Conduit.Data.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Moq;
 using Shouldly;

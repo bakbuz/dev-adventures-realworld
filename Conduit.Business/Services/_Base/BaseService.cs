@@ -1,6 +1,6 @@
 ﻿using Conduit.Core;
-using Conduit.Data.Entities;
-using Conduit.Data.EntityFramework;
+using Conduit.Domain;
+using Conduit.Data.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Optional;
 using Optional.Async;

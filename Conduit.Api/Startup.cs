@@ -11,7 +11,7 @@ using Conduit.Business.Services;
 using Conduit.Core.Configuration;
 using Conduit.Core.Identity;
 using Conduit.Core.Services;
-using Conduit.Data.EntityFramework;
+using Conduit.Data.EntityFrameworkCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;

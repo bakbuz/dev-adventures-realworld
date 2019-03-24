@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Conduit.Core.Extensions;
 using Conduit.Core.Models;
-using Conduit.Data.Entities;
+using Conduit.Domain;
 using System.Linq;
 
 namespace Conduit.Core.Mappings

@@ -1,4 +1,4 @@
-﻿namespace Conduit.Data.Entities
+﻿namespace Conduit.Domain
 {
     public class ArticleFavorite
     {
