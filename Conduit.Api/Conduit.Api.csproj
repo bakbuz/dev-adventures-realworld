@@ -6,11 +6,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="logs\**" />
+    <Content Remove="logs\**" />
+    <EmbeddedResource Remove="logs\**" />
+    <None Remove="logs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Conduit.Api.Documentation.xml" />
   </ItemGroup>
 
   <ItemGroup>
-    <ApplicationDefinition Include="Conduit.Api.Documentation.xml" />
+    <Content Include="Conduit.Api.Documentation.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
