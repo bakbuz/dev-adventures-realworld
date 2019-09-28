@@ -58,7 +58,7 @@ namespace Conduit.Api
                 options.Filters.Add<ExceptionFilter>();
                 options.Filters.Add<ModelStateFilter>();
             }).SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
-            .AddJsonOptions();
+            .AddJsonOptions_();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

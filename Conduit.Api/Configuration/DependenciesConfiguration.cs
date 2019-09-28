@@ -1,7 +1,7 @@
 ﻿using Conduit.Api.OperationFilters;
 using Conduit.Core.Configuration;
-using Conduit.Domain;
 using Conduit.Data.EntityFrameworkCore;
+using Conduit.Domain;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -107,7 +107,7 @@ namespace Conduit.Api.Configuration
             });
         }
 
-        public static IMvcBuilder AddJsonOptions(this IMvcBuilder mvcBuilder)
+        public static IMvcBuilder AddJsonOptions_(this IMvcBuilder mvcBuilder)
         {
             mvcBuilder.AddJsonOptions(options =>
             {
@@ -120,8 +120,9 @@ namespace Conduit.Api.Configuration
                     DateTimeFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss.fff'Z'"
                 };
 
-                options.SerializerSettings.Converters.Add(converter);
-                options.SerializerSettings.DateFormatHandling = Newtonsoft.Json.DateFormatHandling.IsoDateFormat;
+
+                options.JsonSerializerOptions.Converters.Add(converter);
+                options.JsonSerializerOptions.DateFormatHandling = Newtonsoft.Json.DateFormatHandling.IsoDateFormat;
             });
 
             return mvcBuilder;

@@ -21,9 +21,7 @@ namespace Conduit.Api.Configuration
 
         public static void AddLogging(this ILoggerFactory loggerFactory, IConfigurationSection loggingConfiguration)
         {
-            loggerFactory.AddConsole(loggingConfiguration);
             loggerFactory.AddFile("logs/web-api-{Date}.txt");
-            loggerFactory.AddDebug();
         }
     }
 }

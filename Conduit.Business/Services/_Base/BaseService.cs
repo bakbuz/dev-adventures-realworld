@@ -1,9 +1,9 @@
 ﻿using Conduit.Core;
-using Conduit.Domain;
 using Conduit.Data.EntityFrameworkCore;
+using Conduit.Domain;
 using Microsoft.EntityFrameworkCore;
 using Optional;
-using Optional.Async;
+using Optional.Async.Extensions;
 using System;
 using System.Threading.Tasks;
 
@@ -20,11 +20,11 @@ namespace Conduit.Business.Services
 
         protected virtual Task<Option<User, Error>> GetUserByIdOrError(string userId) =>
             GetUserById(userId.SomeNotNull())
-                .WithException<User, Error>($"No user with an id of {userId} has been found.");
+                .WithExceptionAsync<User, Error>($"No user with an id of {userId} has been found.");
 
         protected virtual Task<Option<User, Error>> GetUserByNameOrError(string username) =>
             GetUserByName(username.SomeNotNull())
-                .WithException<User, Error>($"No user '{username}' has been found.");
+                .WithExceptionAsync<User, Error>($"No user '{username}' has been found.");
 
         protected virtual Task<Option<User>> GetUserByName(Option<string> username) =>
             username.FlatMapAsync(name =>

@@ -2,10 +2,10 @@
 using Conduit.Core;
 using Conduit.Core.Models;
 using Conduit.Core.Services;
-using Conduit.Domain;
 using Conduit.Data.EntityFrameworkCore;
+using Conduit.Domain;
 using Optional;
-using Optional.Async;
+using Optional.Async.Extensions;
 using System.Linq;
 using System.Threading.Tasks;
 

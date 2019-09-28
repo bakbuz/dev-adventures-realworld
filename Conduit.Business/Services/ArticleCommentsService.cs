@@ -1,13 +1,12 @@
 ﻿using AutoMapper;
-using Conduit.Business.Extensions;
 using Conduit.Core;
 using Conduit.Core.Models;
 using Conduit.Core.Services;
-using Conduit.Domain;
 using Conduit.Data.EntityFrameworkCore;
+using Conduit.Domain;
 using Microsoft.EntityFrameworkCore;
 using Optional;
-using Optional.Async;
+using Optional.Async.Extensions;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -84,6 +83,6 @@ namespace Conduit.Business.Services
                 .Comments
                 .Include(c => c.Author)
                 .FirstOrDefaultAsync(c => c.Id == commentId)
-                .SomeNotNull<Comment, Error>($"No comment with an id of '{commentId}' was found.");
+                .SomeNotNullAsync<Comment, Error>($"No comment with an id of '{commentId}' was found.");
     }
 }

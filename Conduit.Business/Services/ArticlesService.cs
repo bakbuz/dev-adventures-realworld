@@ -6,6 +6,7 @@ using Conduit.Data.EntityFrameworkCore;
 using Conduit.Domain;
 using Microsoft.EntityFrameworkCore;
 using Optional;
+using Optional.Async.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -174,7 +175,7 @@ namespace Conduit.Business.Services
                     await AllArticlesQueryable
                         .OrderByDescending(a => a.CreatedAt)
                         .FirstOrDefaultAsync(a => a.Slug.ToLower() == slug.ToLower())
-                        .SomeNotNull<Article, Error>($"No article with slug '{slug}' was found."));
+                        .SomeNotNullAsync<Article, Error>($"No article with slug '{slug}' was found."));
 
         private List<ArticleTag> FromTagListToDbCollection(Article article, ICollection<string> tagList)
         {

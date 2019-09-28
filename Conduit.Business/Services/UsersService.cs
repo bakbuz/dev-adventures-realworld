@@ -12,6 +12,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Optional.Async.Extensions;
+using Optional.Extensions;
 
 namespace Conduit.Business.Services
 {
@@ -55,7 +57,7 @@ namespace Conduit.Business.Services
             var user = Mapper.Map<User>(model);
 
             var creationResult = await UserManager.CreateAsync(user, model.Password)
-                .SomeWhen<IdentityResult, Error>(
+                .SomeWhenAsync<IdentityResult, Error>(
                     x => x.Succeeded,
                     x => x.Errors.Select(e => e.Description).ToArray());
 
