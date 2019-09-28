@@ -2,11 +2,10 @@
 using Conduit.Core;
 using Conduit.Core.Models;
 using Conduit.Core.Services;
-using Conduit.Domain;
 using Conduit.Data.EntityFrameworkCore;
+using Conduit.Domain;
 using Microsoft.EntityFrameworkCore;
 using Optional;
-using Optional.Async;
 using System;
 using System.Collections.Generic;
 using System.Linq;
