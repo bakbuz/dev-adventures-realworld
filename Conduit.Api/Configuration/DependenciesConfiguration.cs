@@ -106,7 +106,7 @@ namespace Conduit.Api.Configuration
             });
         }
 
-        public static void AddSwagger(this IServiceCollection services)
+        public static void AddSwaggerDoc(this IServiceCollection services)
         {
             services.AddSwaggerGen(setup =>
             {

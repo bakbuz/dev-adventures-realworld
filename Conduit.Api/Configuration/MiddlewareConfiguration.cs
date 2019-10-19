@@ -6,7 +6,7 @@ namespace Conduit.Api.Configuration
 {
     public static class MiddlewareConfiguration
     {
-        public static void UseSwagger(this IApplicationBuilder app, string endpointName)
+        public static void UseSwaggerDoc(this IApplicationBuilder app, string endpointName)
         {
             app.UseSwagger();
             app.UseSwaggerUI(setup =>

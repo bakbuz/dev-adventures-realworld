@@ -40,7 +40,7 @@ namespace Conduit.Api
 
             services.AddDbContext(Configuration.GetConnectionString("DbConnectionString"));
             services.AddAutoMapper(typeof(Startup));
-            services.AddSwagger();
+            services.AddSwaggerDoc();
             services.AddJwtIdentity(Configuration.GetSection(nameof(JwtConfiguration)));
 
             services.AddTransient<IUsersService, UsersService>();
@@ -74,7 +74,7 @@ namespace Conduit.Api
 
             app.UseRouting();
 
-            app.UseSwagger("My Web API.");
+            app.UseSwaggerDoc("My Web API.");
             app.UseStaticFiles();
             app.UseAuthentication();
             app.UseAuthorization();
