@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conduit.Business", "Conduit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conduit.Business.Tests", "Conduit.Business.Tests\Conduit.Business.Tests.csproj", "{968CF96E-707D-4776-A750-6F828D873386}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conduit.Api", "Conduit.Api\Conduit.Api.csproj", "{0E016D85-0556-4E08-9919-961E6284C3F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{968CF96E-707D-4776-A750-6F828D873386}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{968CF96E-707D-4776-A750-6F828D873386}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{968CF96E-707D-4776-A750-6F828D873386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E016D85-0556-4E08-9919-961E6284C3F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E016D85-0556-4E08-9919-961E6284C3F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E016D85-0556-4E08-9919-961E6284C3F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E016D85-0556-4E08-9919-961E6284C3F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
